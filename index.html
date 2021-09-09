@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Website</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+ </head>
+ <body>
+     <section class="header">
+         <nav>
+             <a href="index.html"><img class="logo" src="images/PngItem_2923379.png" alt=""></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                 <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">RESULTS</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                 </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+         </nav>
+    <div class="text-box">
+        <h1>Welcome to the Best Education Platform</h1>
+        <p>We are one of the most dedicated online educational platform for your learning <br> and we assure you to upskill you for the competetive world.</p>
+        <a href="" class="btn">Visit Us to know more</a>
+    </div>
+     </section>
+
+     <section class="course">
+         <h1>Courses We Offer</h1>
+         <p>We offer a wide-range of courses for the upcoming needs of your future!!</p>
+         <div class="row">
+             <div class="course-col">
+                 <h3>Computer Science</h3>
+                 <p>Here we offer various concepts related to CSE which helps to your IT upskilling or for students learning for their exams</p>
+             </div>
+
+             <div class="course-col">
+                <h3>Electronics</h3>
+                <p>Here we offer various concepts related to Electroics which helps to your GATE prep or for students learning for their exams</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Miscellaneous Courses</h3>
+                <p>Here we offer various topics of hobby which helps to your skilling or for them who want to folow passion</p>
+            </div>
+         </div>        
+
+     </section>
+
+     <script>
+         var navLinks = document.getElementById("navLinks");
+
+         function showmenu(){
+             navLinks.style.right = "0";
+         }
+         function hidemenu(){
+            navLinks.style.right = "-210px";
+        }
+     </script>
+
+ </body>
+ </html>
